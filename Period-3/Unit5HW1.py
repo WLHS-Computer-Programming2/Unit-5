@@ -17,7 +17,7 @@ def main():
         ["Emily", "Jones", 3, 96],
         ["Michael", "Brown", 3, 90]
     ]
-
+    print(class_data)
 # Print the first name, last name, and test # for all tests above 80
 
 # Print the first and last name of the student with the highest grade for each test
