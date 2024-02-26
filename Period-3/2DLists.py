@@ -20,3 +20,5 @@ print(my_grid[-1][2:5]) # prints 7,7,7 from last row
 print(my_grid[1:3]) # prints rows 1 and 2
 
 # print all of the data from the third column
+# should print [0,-3,3,7,7,3,7,7]
+target = [0,-3,3,7,7,3,7,7]
