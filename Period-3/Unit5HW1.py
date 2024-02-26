@@ -22,7 +22,8 @@ def main():
 
 # Print the first and last name of the student with the highest grade for each test
 
-# Add a new student named Parker Letmate with test scores of 98, 94, and 99
+# Add a new student named Parker Letmate with test scores of 98, 94, and 99.
+# Then repeat the above steps
 
 if __name__ == "__main__":
     main()
