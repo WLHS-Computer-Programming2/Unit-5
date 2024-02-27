@@ -37,8 +37,25 @@ for i in range(1,5):
 
 # print all of the data from the 3rd column
 # should print [0,-3,3,7,7,3,7,7]
-    
 
+target = [0,-3,3,7,7,3,7,7]
+column_three = []
 
+# fill up column_three
+for i in range(len(my_grid)):
+    column_three.append(my_grid[i][2])
 
+assert target == column_three
+
+# pythonic way
+column_three = []
+for index,item in enumerate(my_grid):
+    column_three.append(my_grid[index][2])
+
+assert target == column_three
+
+my_grid.append([100,100,100,100])
+
+for item in my_grid:
+    print(item)
 
