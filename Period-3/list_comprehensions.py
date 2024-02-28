@@ -41,3 +41,24 @@ print(true_false)
 
 string_list = [str(i) for i in range(1,6)]
 print(string_list)
+
+# make the list [1,4,7,10,13]
+print([3*i+1 for i in range(5)])
+
+# challenge: make the list [0,7,16,27,40,55]
+# hint: not linear, x^2+bx+c and the domain is [0,5]
+print([i**2+6*i for i in range(0,6)])
+
+# extra content - boolean expressions in comprehensions
+# format: [expression for item in list if conditional]
+# is the same as
+'''
+for item in list:
+    if conditional:
+        expression
+'''
+list_one = [22,13,45,50,98,71,43,44,1]
+print([x*2 for x in list_one if x%2==0]) # if statement
+print([x+1 if x>=45 else x+5 for x in list_one]) # if else statement
+
+# Google more for if, elif, else
