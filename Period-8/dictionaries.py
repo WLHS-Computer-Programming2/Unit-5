@@ -27,3 +27,51 @@ for key in favorite_languages:
 print("\n")
 
 # you can use pop if you want to store the value - key is not stored
+
+# what if I try to retrieve a key that doesn't exist?
+# [] leads to a KeyValue exception, .get() returns None
+# print(favorite_languages['smith'])
+print(favorite_languages.get('smith'))
+print(favorite_languages.get('edward'))
+
+
+### Activity ###
+# 1) Make a dictionary of the favorite colors of each person in the class
+
+# 2) Write a function called reverse_lookup that will take in a color and dictionary and
+# return a list of each person with that favorite color
+favorite_colors = {
+    'tristan':'red',
+    'colton':'blue',
+    'meri':'red',
+    'aron':'black',
+    'cardin':'blue',
+    'neil':'green',
+    'ajay':'blue',
+    'spencer':'red',
+    'kevin':'purple',
+    'aaron':'green',
+    'vincent':'purple',
+    'cole':'blue',
+    'eli':'navy',
+    'matthew':'purple',
+    'nick':'black',
+    'alex': 'orange'
+}
+
+def reverse_lookup(fav_colors:dict,color:str)->list:
+    '''Searches a dictionary for anyone with a particular
+    favorite color
+    
+    Parameters
+    ----------
+    fav_colors - a dictionary of people and their favorite colors
+    
+    color - the favorite color we are looking for
+    
+    Return
+    ------
+    A list of the people whose favorite color is color'''
+    print(None)
+
+print(reverse_lookup(favorite_colors,'red'))
