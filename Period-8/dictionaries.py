@@ -72,6 +72,13 @@ def reverse_lookup(fav_colors:dict,color:str)->list:
     Return
     ------
     A list of the people whose favorite color is color'''
-    print(None)
+    list_of_people = []
+    for person in fav_colors:
+        if(fav_colors[person] == color):
+            list_of_people.append(person)
+    return list_of_people
 
-print(reverse_lookup(favorite_colors,'red'))
+
+color = 'purple'
+new_line = "\n"
+print(f"The following people have a favorite color of {color}:\n{new_line.join(reverse_lookup(favorite_colors,color))}")
