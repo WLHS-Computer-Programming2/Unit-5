@@ -77,8 +77,8 @@ def reverse_lookup(fav_colors:dict,color:str)->list:
         if(fav_colors[person] == color):
             list_of_people.append(person)
     return list_of_people
-
-
+temp = ['adam','bob','cam','don']
+print("\n".join(temp).title())
 color = 'purple'
 new_line = "\n"
-print(f"The following people have a favorite color of {color}:\n{new_line.join(reverse_lookup(favorite_colors,color))}")
+print(f"The following people have a favorite color of {color}:\n{new_line.join(reverse_lookup(favorite_colors,color)).title()}")
