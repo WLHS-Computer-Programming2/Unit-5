@@ -42,7 +42,14 @@ for person in sorted(favorite_languages.keys()):
 favorite_languages['eden'] = 'ruby'
 print(favorite_languages)
 
-# print unique values
+# print unique values use set()
 print("The following languages were mentioned: ")
 for language in set(favorite_languages.values()):
     print(language.title())
+
+'''Task: Make a dictionary of the favorite colors of
+each person in the room. Print all people and their
+fav color, nicely formatted. Then print a list of 
+the colors that were mentioned, no duplicates. Lastly,
+print a list of first names in alphabetical order,
+nicely formatted.'''
