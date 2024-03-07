@@ -72,7 +72,7 @@ favorite_colors = {
 }
 
 for person,color in favorite_colors.items():
-    print(f"{person.title()}'s favorite color is {color.lower()}.")\
+    print(f"{person.title()}'s favorite color is {color.lower()}.")
 
 print("The colors mentioned were: ",end="")
 color_string = ""
