@@ -27,3 +27,14 @@ for person,language in favorite_languages.items():
 
 for person in favorite_languages.keys():
     print(person.title())
+
+# to print only the values the template is
+# for value in dictionary_name.values()
+    
+print(f"The following languages have been favorited: ")
+for language in favorite_languages.values():
+    print(language.title())
+
+# to print in alphabetical order, used sorted()
+for person in sorted(favorite_languages.keys()):
+    print(f"{person.title()}, thank you for taking the survey.")
