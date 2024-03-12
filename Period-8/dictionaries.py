@@ -44,7 +44,7 @@ favorite_colors = {
     'tristan':'red',
     'colton':'blue',
     'meri':'red',
-    'aron':'black',
+    'aaron':'black',
     'cardin':'blue',
     'neil':'green',
     'ajay':'blue',
@@ -77,8 +77,51 @@ def reverse_lookup(fav_colors:dict,color:str)->list:
         if(fav_colors[person] == color):
             list_of_people.append(person)
     return list_of_people
+
 temp = ['adam','bob','cam','don']
 print("\n".join(temp).title())
 color = 'purple'
 new_line = "\n"
 print(f"The following people have a favorite color of {color}:\n{new_line.join(reverse_lookup(favorite_colors,color)).title()}")
+
+# Looping through dictionaries
+
+# by key-value pairs
+#    key   value
+for person,color in favorite_colors.items():
+    print(f"{person.title()}'s favorite color is {color.lower()}.")
+
+
+# by values
+color_string = ""
+for color in set(favorite_colors.values()): # set removes dups
+    color_string += f"{color.lower()}, "
+
+color_string = color_string[:-2]+"."
+print(f"The colors mentioned were: {color_string}")
+
+# by keys
+student_string = ""
+for student in sorted(favorite_colors.keys()): # sorted will alphabetize
+    student_string += f"{student.title()}, "
+student_string = student_string[:-2]
+print(f"The students are: {student_string}.")
+
+# Nesting info with dictionaries
+users = {
+    'aeinstein':{
+        'first':'albert',
+        'last':'einstein',
+        'location':'princeton'
+    },
+    'mcurie':{
+        'first':'marie',
+        'last':'curie',
+        'location':'paris'
+    }
+}
+
+#   dict name  key          key
+print(users['aeinstein']['location'])
+print(users['mcurie']['first'].title())
+print(users['aeinstein'])
