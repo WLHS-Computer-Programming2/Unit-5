@@ -8,5 +8,10 @@ users = {
         'first':'marie',
         'last':'curie',
         'location':'paris'
+    },
+    'rfeyman':{
+        'first':'richard',
+        'last': 'feyman',
+        'location': 'cal tech'
     }
 }
