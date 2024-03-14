@@ -91,9 +91,6 @@ print(f"The following people have a favorite color of {color}:\n{new_line.join(r
 for person,color in favorite_colors.items():
     print(f"{person.title()}'s favorite color is {color.lower()}.")
 
-for person,test_data in quizzes.item():
-    for test, score in test_data.item():
-        
 # by values
 color_string = ""
 for color in set(favorite_colors.values()): # set removes dups
@@ -124,6 +121,13 @@ users = {
 }
 
 #   dict name  key          key
-print(users['aeinstein']['location'])
-print(users['mcurie']['first'].title())
-print(users['aeinstein'])
+# print(users['aeinstein']['location'])
+# print(users['mcurie']['first'].title())
+# print(users['aeinstein'])
+
+#   key       value(dict)
+for username,user_info in users.items():
+    print(f"The user with username {username} has a:")
+    #   key  value
+    for info,value in user_info.items():
+        print(f"\t{info} of {value.title()}")
