@@ -35,3 +35,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+for name,test_info in class_test_data.values():
+    for test_number,test_score in test_info.values():
+        print(f"{name} {test_number} {test_score}")
